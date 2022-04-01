@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="tut14.css" />
+    <!-- CSS Selectors: -->
+    <!-- ELEMENT SELECTORS -->
+    <!-- ID SELECTORS -->
+    <!-- CLASS SELECTORS -->
+    <!-- GROUPING SELECTORS -->
+    <style>
+      /* ELEMENT SELECTORS  */
+      p {
+        color: red;
+        background-color: aqua;
+        border: 2px solid black;
+      }
+
+      div > p {
+        color: blue;
+        background-color: red;
+      }
+      /* CLASS SELECTORS */
+      .redBg {
+        color: violet;
+        background-color: brown;
+      }
+      /* ID SELECTORS */
+      #bgBlue {
+        color: green;
+        background-color: yellow;
+      }
+      /* GROUPING SELECTORS */
+      span,
+      footer {
+        color: pinkj;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selctors</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex magnam illum
+      laudantium consequuntur repellat iste sequi ducimus alias eum neque?
+    </p>
+    <p class="redBg">sajflasjfladjfkadjfkdasfklafjkladsfadsjlfjadfklfjsl</p>
+    <p id="bgBlue">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum veniam
+      excepturi dignissimos laborum tenetur, quam corporis assumenda, impedit
+      sapiente exercitationem quia dolorem quasi quaerat commodi incidunt omnis
+      optio aspernatur quo.
+    </p>
+    <div>
+      <p>this is paragraph in div</p>
+    </div>
+    <span>this is span</span>
+    <footer>this is footer</footer>
+  </body>
+</html>

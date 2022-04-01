@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS grid + media queries</title>
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section section aside"
+          "footer footer footer footer";
+      }
+      @media only screen and (max-width: 300px) {
+        body {
+          background-color: red;
+        }
+        aside {
+          display: none;
+        }
+        span {
+          display: block;
+          text-align: center;
+        }
+        .container {
+          display: grid;
+          grid-gap: 1rem;
+          grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+      }
+      @media only screen and (min-width: 300px) and (max-width: 500px) {
+        body {
+          background-color: blue;
+        }
+        span {
+          display: block;
+          text-align: center;
+        }
+        .container {
+          display: grid;
+          grid-gap: 1rem;
+          grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section aside"
+            "footer footer footer footer";
+        }
+        aside {
+          display: none;
+        }
+      }
+      @media (min-width: 500px) and (max-width: 800px) {
+        body {
+          background-color: green;
+        }
+        .container {
+          display: grid;
+          grid-gap: 1rem;
+          grid-template-areas:
+            "navbar navbar navbar navbar"
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+        }
+        span {
+          display: block;
+          text-align: center;
+        }
+      }
+      @media (min-width: 800px) {
+        body {
+          background-color: yellow;
+        }
+      }
+      nav {
+        grid-area: navbar;
+      }
+      section {
+        grid-area: section;
+      }
+      aside {
+        grid-area: aside;
+      }
+      footer {
+        grid-area: footer;
+        text-align: center;
+      }
+      .brdr {
+        border: 2px solid black;
+        padding: 10px 23px;
+        background-color: wheat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="brdr">
+        <span>Home</span>
+        <span>About Us</span>
+        <span>Contact Us</span>
+        <span>Services</span>
+      </nav>
+      <section class="brdr">
+        <h2>learn python in 1 hour</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt non
+          eos exercitationem molestiae facere id cumque, repellendus ducimus
+          architecto cupiditate assumenda magni quo deleniti aliquam laborum
+          ipsam iste libero! Nam officia at veritatis molestias ducimus, maxime
+          facilis nisi et modi quaerat quas nostrum quam unde provident esse
+          culpa repellat debitis id quod necessitatibus nemo inventore delectus,
+          sint labore? Iste eius ducimus ipsum alias, nam minus exercitationem
+          qui accusamus quia excepturi consectetur, quaerat dolor. Laudantium
+          voluptas architecto perspiciatis, accusantium vero ullam dolor
+          accusamus obcaecati, voluptates nulla dolorum, molestias ipsa. Impedit
+          inventore corporis, praesentium aliquam neque molestias? Obcaecati
+          laudantium dolores labore, amet aliquam pariatur minima quod rem
+          delectus impedit explicabo numquam sed deleniti eum ex! At cum facere
+          esse quibusdam minus dolorem!
+        </p>
+      </section>
+      <aside class="brdr">
+        <h2>more about us</h2>
+      </aside>
+    </div>
+    <footer class="brdr">copyright pratikwadhai.com 2022</footer>
+  </body>
+</html>

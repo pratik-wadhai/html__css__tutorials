@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box shadow and text shadow</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        border: 2px solid red;
+        background-color: aquamarine;
+        /* box-shadow:  offset-x offset-y color; */
+        /* box-shadow:  offset-x offset-y color blur radius ; */
+        /* box-shadow:  offset-x offset-y color blur radius color radius; */
+
+        /* box-shadow: 10px 13px green; */
+
+        /* to apply box-shadow on upper side use this  */
+        /* box-shadow: -10px -13px green; */
+        /* box-shadow: 7px 5px 10px green; */
+        /* box-shadow: -7px -5px 10px green; */
+        box-shadow: -7px -5px 10px 34px green;
+        /* box-shadow: -7px -5px 10px 34px rgba(0,0,0,0.5); */
+        box-shadow: inset 3px 5px green;
+      }
+      .card h1 {
+        /* text-shadow: 2px 2px green; */
+        /* text-shadow: 2px 2px 2px green; */
+        text-shadow: -2px -2px 2px green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="card1">
+        <h1>this is python course</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+          doloribus? Aliquid soluta iure totam itaque autem. Voluptatem,
+          placeat! Praesentium porro ducimus beatae dicta cupiditate aliquam
+          dolorum distinctio enim, quasi illo!
+        </p>
+      </div>
+      <div class="card" id="card2">
+        <h1>this is javascript course</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+          doloribus? Aliquid soluta iure totam itaque autem. Voluptatem,
+          placeat! Praesentium porro ducimus beatae dicta cupiditate aliquam
+          dolorum distinctio enim, quasi illo!
+        </p>
+      </div>
+      <div class="card" id="card3">
+        <h1>this is java course</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+          doloribus? Aliquid soluta iure totam itaque autem. Voluptatem,
+          placeat! Praesentium porro ducimus beatae dicta cupiditate aliquam
+          dolorum distinctio enim, quasi illo!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

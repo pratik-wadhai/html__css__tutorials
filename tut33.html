@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet">
+    <title>Before and After Pseudo Selectors</title>
+    <style>
+        body{
+            font-family: 'Gideon Roman', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            content: '';
+            background: url('https://source.unsplash.com/collection/190727/1920x1080') no-repeat center center fixed;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+
+            
+        }
+        section{
+            margin: 3px 400px ;
+            display: flex;
+            flex-direction: column ;
+            align-items: center;
+            /* border: 2px solid red; */
+            height: 344px;
+            justify-content: center;
+        }
+        /* section::after{
+            content:"this is a content"
+        } */
+        li{
+            list-style: none;
+            padding: 30px 30px;
+        }
+        .navigation{
+            font-size: 15px;
+            display: flex;
+
+        }
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li class="item">Home</li>
+          <li class="item">About Us</li>
+          <li class="item">Services</li>
+          <li class="item">Contact Us<lli>
+        </ul>
+      </nav>
+    </header>
+      <section>
+          <h1>Welcome to Coding World</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nisi doloribus pariatur mollitia quas qui exercitationem vero asperiores illum veritatis beatae voluptates quae obcaecati, cum doloremque culpa eveniet ipsam fuga laboriosam. Nemo quas, iusto et voluptatem deleniti dolore nulla quisquam?</p>
+      </section>
+      <!-- <hr> -->
+  </body>
+</html>

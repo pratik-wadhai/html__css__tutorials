@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borders and Backgorunds in CSS</title>
+    <style>
+      #firstPara {
+        border: 12px solid green;
+        border-radius: 13px;
+        background-color: red;
+        height: 100px;
+        width: 500px;
+      }
+      #secondPara {
+        height: 100px;
+        width: 500px;
+        background-color: green;
+        border-top: 12px solid black;
+        border-bottom: 12px solid rgb(104, 118, 245);
+        border-left: 12px solid blue;
+        border-right: 12px solid red;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+      #thirdPara {
+        height: 500px;
+        width: 500px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/67/Hoffl%C3%B6th%28T%C3%B6Vo-Cl%C3%B6rath%29-2%28400x400%29.jpg");
+        border: 2px solid red;
+        background-repeat: no-repeat; /* repeat-x and repeat-y will make it repeat on x and y axis*/
+        /* background-position: center top; center will make it center in the box  x and y axis me bhi kam karta hai ye */
+        background-position: top left;
+        background-position: bottom right;
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is first heading</h1>
+    <p id="firstPara">this is first paragraph</p>
+    <h1>This is second heading</h1>
+    <p id="secondPara">this is second paragraph</p>
+    <h1>This is third heading</h1>
+    <p id="thirdPara">this is third paragraph</p>
+  </body>
+</html>

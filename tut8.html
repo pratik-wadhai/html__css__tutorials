@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms and Input Tags</title>
+  </head>
+  <body>
+    <h2>This is HTML form tutorial</h2>
+    <!-- name attribute hona zaruri hai radio me  -->
+    <form action="backend.php">
+      <label for="name">Name </label>
+      <!--- This is for attribute of input tag -->
+      <div><input type="text" name="myName" id="name" /></div>
+      <!-- name attribute is used to identify the form element -->
+      <div>Role: <input type="text" name="myRole" id="" /></div>
+      <div>Email: <input type="email" name="myEmail" id="" /></div>
+      <div>Date: <input type="date" name="" id="" /></div>
+      <div>Bonus: <input type="number" name="myBonus" id="" /></div>
+      <div>
+        Are you Eligible?:
+        <input type="checkbox" name="myEligibility" checked />
+      </div>
+      <div>
+        Gender: Male<input type="radio" name="myGender"  /> Female<input
+          type="radio"
+          name="myGender" 
+        />
+        other<input type="radio" name="myGender"  />
+      </div>
+      <div>
+      <div>
+        <label for="gender"></label>
+        Gender: Male<input type="checkbox" name="myGender" id="gender" /> Female<input
+          type="checkbox"
+          name="myGender" id="gender"
+        />
+        other<input type="checkbox" name="myGender" id="gender" />
+      </div>
+      <div>
+        Write about youself:<textarea
+          name="myText"
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div>
+        <label for="car">Car</label>
+        <select name="myCar" id="car">
+          <!-- value attribute use karna  -->
+          <option value="volvo">Volvo</option>
+          <option value="volvo">BMW</option>
+        </select>
+      </div>
+      <div>
+        <input type="submit" value="Submit Now" />
+        <input type="reset" value="Reset Now" />
+      </div>
+    </form>
+  </body>
+</html>

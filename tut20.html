@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model Margin and Padding</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0; /* margin by default  css reset*/
+        padding: 0; /* padding by default */
+      }
+      body{
+          background-color: #b13838;
+      }
+      .container {
+        /* width: 100%;
+        height: 100%; */
+        background-color: #f0f0f0;
+        border: 3px solid rgb(145, 60, 60);
+
+        /* we can set margin/padding for top bottom right left lie this */
+
+        /* padding = top right bottom left; */
+        padding: 23px 56px 6px 79px;
+        margin: 23px 56px 6px 79px;
+
+        /* padding: y(top/bottom) x(left/right) */
+        /* padding: 34px 19px; */
+
+        /* padding: 79px; */
+        /* padding-top:70px; */
+        /* padding-bottom:70px; */
+        /* padding-left:70px ; */
+        /* padding-right: ; */
+
+        /* margin: 14px 19px; */
+        /* margin-top: 3px; */
+        /* margin-bottom: 3px; */
+        /* margin-left: 3px; */
+        /* margin-right: 3px; */
+
+        border-radius: 20px;
+        width: 533px;
+        /* box-sizing: border-box; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>this is my first heading</h1>
+      <p id="first">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nisi
+        nemo eum ipsum officiis placeat, fugit, impedit iusto est architecto
+        vitae, sit illo quis accusantium nulla aut. Distinctio, nostrum harum.
+      </p>
+    </div>
+    <div class="container">
+      <h1>this is my second heading</h1>
+      <p id="second">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nisi
+        nemo eum ipsum officiis placeat, fugit, impedit iusto est architecto
+        vitae, sit illo quis accusantium nulla aut. Distinctio, nostrum harum.
+      </p>
+    </div>
+    <div class="container">
+      <h1>this is my third heading</h1>
+      <p id="third">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nisi
+        nemo eum ipsum officiis placeat, fugit, impedit iusto est architecto
+        vitae, sit illo quis accusantium nulla aut. Distinctio, nostrum harum.
+      </p>
+    </div>
+  </body>
+</html>
